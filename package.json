@@ -1,0 +1,20 @@
+{
+  "name": "verzel-store-qa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Teste técnico QA Júnior Verzel: validação da entrega VZS-142 (cupom de desconto e frete grátis)",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test --project=api",
+    "test:e2e": "playwright test --project=e2e",
+    "test:headed": "playwright test --project=e2e --headed",
+    "report": "playwright show-report",
+    "evidencias": "EVIDENCIAS=1 playwright test --reporter=list | tee docs/evidencias/automacao/execucao-playwright.txt",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}

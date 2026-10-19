@@ -1,0 +1,9 @@
+Varredura do cálculo: /api/carrinho/calcular comparado com as 'Regras de cálculo' da documentação
+Executada em 2026-10-19T04:05Z. Combinações: cada produto x quantidade 1..5 + 3 carrinhos mistos, com e sem BEMVINDO10.
+Só as divergências são listadas:
+
+[["P005",2]] - frete: esperado 0 obtido 19.9; total: esperado 200 obtido 219.9
+[["P005",2]] BEMVINDO10 frete: esperado 0 obtido 19.9; total: esperado 180 obtido 199.9
+[["P008",4]] - frete: esperado 0 obtido 19.9; total: esperado 200 obtido 219.9
+[["P008",4]] BEMVINDO10 frete: esperado 0 obtido 19.9; total: esperado 180 obtido 199.9
+divergencias 4 de 86

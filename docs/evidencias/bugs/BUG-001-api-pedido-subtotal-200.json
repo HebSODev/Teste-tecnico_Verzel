@@ -1,0 +1,48 @@
+{
+  "capturadoEm": "2026-10-19T03:59:03.544Z",
+  "request": {
+    "method": "POST",
+    "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+    "body": {
+      "cliente": {
+        "nome": "Maria Silva",
+        "email": "maria@exemplo.com",
+        "cep": "01310-100"
+      },
+      "itens": [
+        {
+          "produtoId": "P008",
+          "quantidade": 4
+        }
+      ]
+    }
+  },
+  "response": {
+    "status": 201,
+    "body": {
+      "numero": "VZ-390200",
+      "criadoEm": "2026-10-19T03:59:03.541Z",
+      "cliente": {
+        "nome": "Maria Silva",
+        "email": "maria@exemplo.com",
+        "cep": "01310100"
+      },
+      "itens": [
+        {
+          "produtoId": "P008",
+          "nome": "Garrafa Térmica 750ml",
+          "precoUnitario": 50,
+          "quantidade": 4,
+          "total": 200
+        }
+      ],
+      "subtotal": 200,
+      "desconto": 0,
+      "frete": 19.9,
+      "freteGratis": false,
+      "valorFaltanteFreteGratis": 0,
+      "total": 219.9,
+      "cupom": null
+    }
+  }
+}
